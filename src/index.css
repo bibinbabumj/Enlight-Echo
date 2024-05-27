@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import "@flaticon/flaticon-uicons/css/all/all";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+  * {
+    /* 
+    margin 0,
+    padding 0 ,
+    box-sizing: border-box,
+    list-style: none [ist-none];
+    scroll-behavior: smooth;
+    text-decoration: custom tailwind config color ;
+    box-shadow: none [shadow-none];
+    
+    */
+    @apply m-0 p-0 box-border   outline-violet/30 border-0 no-underline shadow-none;
+  }
+
+  /* 
+    scroll-behavior: smooth;
+    overflow: hidden;
+    */
+  html {
+    @apply  scroll-smooth;
+  }
+
+  body {
+    /* 
+    fontfont-family: 'Inter' and its sub 
+    font-weight: 400;
+    text color:black custom created in tailwind config color
+    */
+    @apply font-inter font-normal text-black;
+  }
+
+  /* italic tag 
+  margin-top: 0.25rem  or 4px ;
+  */
+  i {
+    @apply mt-1;
+  }
+
+  /* set up margin for the sections for medium and large devices */
+  section {
+    @apply my-4 mx-[5vw] md:mx-[6vw] lg:mx-[10vw];
+  }
+/* 
+  h1 {
+    @apply bg-red  md:bg-slate-600 lg:bg-green-400;
+  } */
+
+  /* while selecting a text it show this color */
+  ::selection {
+    @apply bg-violet/30;
+  }
+
+  /* img tag 
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  */
+
+  img {
+    @apply w-full h-full object-cover;
+  }
+
+  h1 {
+    @apply text-4xl font-bold;
+  }
+  h2 {
+    @apply text-3xl font-semibold;
+  }
+  h3 {
+    @apply text-2xl font-medium;
+  }
+
+
+/* nav bar class properties
+  z-index: 10;
+   position: sticky;
+   top: 0px;
+   display: flex;
+   align-items: center;
+   gap: 3rem or 48px 
+   width: 100%;
+
+   max-height: max-content;
+   
+}
+  */
+  .nav-menu{
+    @apply z-10 sticky top-0 flex items-center gap-12 w-full px-[5vw] py-[5vh] h-[10vh] border-b-2 border-violet/10 bg-white;
+  }
+
+  /*  */
+  .cover-h{
+    @apply min-h-[calc(100vh-80px)];
+}
+
+/*  */
+.center{
+  @apply block mx-auto
+}
+
+.link{
+  @apply text-dark-grey hover:text-black hover:bg-grey/30 p-3 px-4 block opacity-75;
+}
+
+
+  .btn-dark{
+    @apply bg-black whitespace-nowrap text-white rounded-full py-3 px-6 text-xl capitalize hover:bg-opacity-85 text-center
+  }
+
+  .btn-light{
+    @apply btn-dark bg-grey text-white;
+}
+
+.input-box{
+  @apply w-full rounded-md p-2 bg-gray-100 pl-12 pr-10  border-b-2 border-violet/10 focus:bg-transparent placeholder:text-black 
+}
+
+.input-icon{
+  @apply absolute left-4 top-1/2 -translate-y-1/2;
+}
+.password-eye-icon{
+  @apply left-[auto] right-4 cursor-pointer
+}
+
+
+.show{
+  @apply opacity-100 pointer-events-auto transition-opacity duration-300;
+}
+
+.hide{
+  @apply opacity-0 pointer-events-none transition-opacity duration-300;
+}
+  
+
+}
+

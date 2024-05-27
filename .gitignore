@@ -1,0 +1,93 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+
+
+# Ignore Windows system files
+Thumbs.db
+desktop.ini
+
+
+# Ignore environment variable files
+.env
+.env.local
+.env.*.local
+
+# Ignore lock files
+package-lock.json
+yarn.lock
+
+# Ignore build directories
+dist/
+build/
+tmp/
+temp/
+
+# Ignore JSON configuration file if it contains sensitive information
+enlighten-echo-blog.json
+
+# Ignore coverage files
+coverage/
+
+# Ignore cache files
+.cache/
+.next/
+.nuxt/
+
+
+# Ignore specific files or directories related to React Native
+*.hmap
+*.ipa
+*.app
+
+# Ignore Firebase configuration files
+.firebase/
+
+# Ignore miscellaneous files
+*.swp
+*~
+.project
+.settings/
+.tmproj
+*.esproj
+*.sublime-project
+*.sublime-workspace
+
+# Ignore JetBrains IDE directories
+.idea/
+*.iml
+
+# Ignore npm and yarn directories
+node_modules/
+jspm_packages/
+
+# Ignore local serverless files
+.serverless/
+
+# Ignore SASS cache
+.sass-cache/
+
+# Ignore the build directory for Vue.js
+public/
